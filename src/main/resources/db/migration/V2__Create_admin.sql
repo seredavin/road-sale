@@ -1,0 +1,2 @@
+INSERT INTO "public"."usr"("id", "active", "full_name", "password", "username") VALUES(1, TRUE, 'Администартор', '$2a$08$jQhbioRs.hsxBBtBWp7TiuxFG0CPy91ZFLPedZl37flJfM/ipyj9K', 'admin') RETURNING "id", "activation_code", "active", "email", "full_name", "password", "username";
+INSERT INTO "public"."user_role"("user_id", "roles") VALUES (1, 'USER'), (1, 'ADMIN');
